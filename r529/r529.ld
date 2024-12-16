@@ -12,10 +12,10 @@ __stack_size  = 0x800;  /* Stack size: 2048 bytes */
 /* Memory sections */
 MEMORY
 {
-    /* ROM: Start at 0x80000000, 512 MB, Read and Execute only */
-    ROM (rx) : ORIGIN = 0x80000000, LENGTH = 0x20000000
-    /* RAM: Start at 0xA0000000, 512 MB, Read, Write, and Execute */
-    RAM (rwx) : ORIGIN = 0xA0000000, LENGTH = 0x20000000
+    /* ROM: Start at 0x00000000, 32 kB, Read and Execute only */
+    ROM (rx) : ORIGIN = 0x00000000, LENGTH = 0x00008000
+    /* RAM: Start at 0x00100000, 32 kB, Read, Write, and Execute */
+    RAM (rwx) : ORIGIN = 0x00100000, LENGTH = 0x00008000
 }
 
 /* Sections definition */
